@@ -53,3 +53,7 @@ if ingredients_list:
         if st.success:
             time.sleep(5)
             success_alert.empty()
+#New section to display smoothiefroot nutrition information
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
