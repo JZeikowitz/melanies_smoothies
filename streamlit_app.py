@@ -38,7 +38,7 @@ if ingredients_list:
         smoothiefroot_response = requests.get(f"https://my.smoothiefroot.com/api/fruit/{search_on}")
         sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
     
-    ingredients_string = ingredients_string[:-2]
+    #ingredients_string = ingredients_string[:-2]
 
     name_insert_stmt = """ """
 
